@@ -33,4 +33,4 @@ function App(): ReactElement {
   );
 }
 
-export default App
+export default App;
