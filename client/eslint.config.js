@@ -47,6 +47,9 @@ export default defineConfig([
         { selector: 'enumMember', format: ['UPPER_CASE'] },
       ],
 
+      // Style
+      'semi': ['error', 'always'],
+
       // General best practices
       'no-console': 'warn',
       'no-debugger': 'error',

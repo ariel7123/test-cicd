@@ -29,3 +29,8 @@ jobs:
 
       - name: Run ESLint
         run: npm run lint
+
+      - name: Check formatting (no auto-fixable issues)
+        run: |
+          npm run lint:fix
+          git diff --exit-code || (echo "::error::Code has auto-fixable lint issues. Run 'npm run lint:fix' locally and commit the changes." && exit 1)
